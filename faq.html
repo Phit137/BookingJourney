@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Help - Booking Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Booking<span>Journey</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="library.html" class="nav-link">Library</a></li>
+                <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="cart-mobile" id="cartMobile">🛒 Cart (0)</li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon" id="cartIcon">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>FAQ & Help Center</h1>
+        <p>Find answers to your questions</p>
+    </section>
+
+    <!-- Search Section -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-search">
+                <h2>How can we help you?</h2>
+                <p>Search our knowledge base or browse categories below</p>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for answers..." class="search-input">
+                    <button type="submit" class="btn btn-secondary">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Categories -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Help Categories</h2>
+                <p>Browse by topic to find what you need.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Orders & Shipping</h3>
+                    <p>Track orders, shipping times, delivery options, and international shipping information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">↩️</div>
+                    <h3>Returns & Refunds</h3>
+                    <p>Return policies, refund process, exchanges, and damaged item claims.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Payment & Billing</h3>
+                    <p>Payment methods, billing issues, gift cards, and promotional codes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Account & Profile</h3>
+                    <p>Account settings, password reset, wishlist management, and preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Book Recommendations</h3>
+                    <p>Personalized suggestions, curated lists, reading guides, and genre exploration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>Store & Events</h3>
+                    <p>Store locations, hours, author signings, book clubs, and community events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to the most common questions.</p>
+            </div>
+
+            <div class="faq-category">
+                <h3 class="faq-category-title">Orders & Shipping</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does shipping take?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard shipping typically takes 3-5 business days within the continental US. Express shipping (1-2 business days) is available for an additional fee. International shipping varies by destination, usually 7-14 business days.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I track my order?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order ships, you'll receive an email with a tracking number. You can also track your order by logging into your account and visiting the "Order History" section. Click on any order to see real-time tracking information.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer free shipping?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer free standard shipping on all orders over $35. Members of our loyalty program enjoy free shipping on all orders regardless of the total amount.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I change my shipping address after placing an order?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If your order hasn't shipped yet, you can change the shipping address by contacting our customer service team immediately. Once an order has shipped, the address cannot be changed, but you may be able to redirect the package through the carrier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3 class="faq-category-title">Returns & Refunds</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your return policy?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept returns within 30 days of purchase. Books must be in their original condition—unread, unmarked, and with no damage. Simply initiate a return through your account or contact customer service for a prepaid return label.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long do refunds take to process?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once we receive your return, refunds are processed within 3-5 business days. The refund will be credited to your original payment method. Please allow an additional 5-10 business days for the refund to appear on your statement, depending on your bank.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if I received a damaged book?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're sorry to hear that! Please contact us within 7 days of delivery with photos of the damage. We'll send you a replacement at no additional cost or issue a full refund—your choice. You won't need to return the damaged item.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3 class="faq-category-title">Payment & Gift Cards</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, Google Pay, and Booking Journey gift cards. We also offer financing options through Affirm for orders over $50.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I use a gift card or promo code?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>During checkout, you'll see a field labeled "Gift Card or Promo Code." Enter your code there and click "Apply." The discount will be reflected in your order total. Note that only one promo code can be used per order, but gift cards can be combined.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do gift cards expire?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, Booking Journey gift cards never expire and have no fees. The full value remains available until used. You can check your gift card balance anytime by logging into your account or contacting customer service.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3 class="faq-category-title">Account & Membership</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I create an account?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click the "Sign Up" button at the top of any page. You'll need to provide your email address and create a password. You can also sign up using your Google or Facebook account for faster registration. Account creation is free!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>I forgot my password. How do I reset it?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click "Sign In" and then "Forgot Password." Enter your email address, and we'll send you a password reset link. The link expires after 24 hours for security. If you don't receive the email, check your spam folder or contact support.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the benefits of creating an account?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Account holders enjoy faster checkout, order tracking, wishlist creation, personalized recommendations, exclusive member discounts, early access to sales, and the ability to earn loyalty points on every purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Need Help Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Still Need Help?</h2>
+                <p>Our support team is ready to assist you.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team in real-time. Available Monday-Friday, 9AM-6PM EST.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Start Chat</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✉️</div>
+                    <h3>Email Support</h3>
+                    <p>Send us an email and we'll respond within 24 hours.</p>
+                    <a href="contact.html" class="btn btn-outline" style="margin-top: 1rem;">Send Email</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3>Phone Support</h3>
+                    <p>Call us at (555) 123-4567. Available Monday-Friday, 9AM-6PM EST.</p>
+                    <a href="tel:5551234567" class="btn btn-outline" style="margin-top: 1rem;">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for tips, updates, and exclusive offers.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Booking<span>Journey</span></span>
+                </div>
+                <p>Your trusted destination for books that inspire, educate, and entertain. Join us on a journey through the world of literature.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="library.html">Fiction</a></li>
+                    <li><a href="library.html">Non-Fiction</a></li>
+                    <li><a href="library.html">Mystery</a></li>
+                    <li><a href="library.html">Self-Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">Help Center</a></li>
+                    <li><a href="faq.html">Shipping Info</a></li>
+                    <li><a href="faq.html">Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Booking Journey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-empty">
+            <div class="cart-empty-icon">🛒</div>
+            <h3>Your cart is empty</h3>
+            <p>Looks like you haven't added any books yet.</p>
+            <a href="library.html" class="btn btn-secondary">Browse Library</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Cart modal
+        const cartIcon = document.getElementById('cartIcon');
+        const cartMobile = document.getElementById('cartMobile');
+        const cartModal = document.getElementById('cartModal');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const cartClose = document.getElementById('cartClose');
+
+        cartIcon.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            cartOverlay.classList.add('active');
+        });
+
+        cartMobile.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            cartOverlay.classList.add('active');
+            navMenu.classList.remove('active');
+        });
+
+        cartClose.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        });
+
+        cartOverlay.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Booking Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Booking<span>Journey</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="library.html" class="nav-link">Library</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li class="cart-mobile" id="cartMobile">🛒 Cart (0)</li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon" id="cartIcon">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get in Touch</h2>
+                <p>Have questions about an order, need book recommendations, or just want to say hello? We're here to help!</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Visit Us</h3>
+                    <p>123 Literary Lane<br>Booktown, BK 12345</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p>(555) 123-4567<br>Mon-Fri: 9AM - 6PM</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <p>hello@bookingjourney.com<br>support@bookingjourney.com</p>
+                </div>
+            </div>
+            <div class="social-links-center">
+                <a href="#" class="social-link-dark">📘</a>
+                <a href="#" class="social-link-dark">📷</a>
+                <a href="#" class="social-link-dark">🐦</a>
+                <a href="#" class="social-link-dark">💼</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Send Message Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+            <div class="contact-form-standalone">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="recommendation">Book Recommendation</option>
+                            <option value="shipping">Shipping Question</option>
+                            <option value="returns">Returns & Refunds</option>
+                            <option value="feedback">General Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Hours Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Store Hours</h2>
+                <p>Visit our physical location for a unique browsing experience.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image"><img src="public/images/front.jpg" alt="Booking Journey storefront"></div>
+                <div class="about-text">
+                    <h2>Visit Our Bookstore</h2>
+                    <p>There's nothing quite like browsing shelves filled with books. Stop by our store to explore our collection in person, attend author events, or simply enjoy a cup of coffee in our reading corner.</p>
+                    <p><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 9:00 PM</p>
+                    <p><strong>Sunday:</strong> 11:00 AM - 6:00 PM</p>
+                    <p style="margin-top: 1.5rem;"><strong>Holiday Hours:</strong> We're closed on major holidays. Please check our social media for special holiday schedules.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1.5rem;">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay Connected</h2>
+        <p>Subscribe to our newsletter for updates, promotions, and reading inspiration.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Booking<span>Journey</span></span>
+                </div>
+                <p>Your trusted destination for books that inspire, educate, and entertain. Join us on a journey through the world of literature.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="library.html">Fiction</a></li>
+                    <li><a href="library.html">Non-Fiction</a></li>
+                    <li><a href="library.html">Mystery</a></li>
+                    <li><a href="library.html">Self-Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">Help Center</a></li>
+                    <li><a href="faq.html">Shipping Info</a></li>
+                    <li><a href="faq.html">Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Booking Journey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-empty">
+            <div class="cart-empty-icon">🛒</div>
+            <h3>Your cart is empty</h3>
+            <p>Looks like you haven't added any books yet.</p>
+            <a href="library.html" class="btn btn-secondary">Browse Library</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Cart modal
+        const cartIcon = document.getElementById('cartIcon');
+        const cartMobile = document.getElementById('cartMobile');
+        const cartModal = document.getElementById('cartModal');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const cartClose = document.getElementById('cartClose');
+
+        cartIcon.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            cartOverlay.classList.add('active');
+        });
+
+        cartMobile.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            cartOverlay.classList.add('active');
+            navMenu.classList.remove('active');
+        });
+
+        cartClose.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        });
+
+        cartOverlay.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

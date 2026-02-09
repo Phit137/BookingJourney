@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Booking Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Booking<span>Journey</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="library.html" class="nav-link active">Library</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="cart-mobile" id="cartMobile">🛒 Cart (0)</li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon" id="cartIcon">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Our Library</h1>
+        <p>Explore our collection of handpicked books</p>
+    </section>
+
+    <!-- Fiction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fiction</h2>
+                <p>Immerse yourself in captivating stories and unforgettable characters.</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-badge">Bestseller</span>
+                        <img src="public/images/books/the-midnight-library.jpg" alt="The Midnight Library">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Literary Fiction</span>
+                        <h3 class="book-title">The Midnight Library</h3>
+                        <p class="book-author">by Matt Haig</p>
+                        <div class="book-price">
+                            <span class="price">$16.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/the-nightingale.jpg" alt="The Nightingale">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Historical Fiction</span>
+                        <h3 class="book-title">The Nightingale</h3>
+                        <p class="book-author">by Kristin Hannah</p>
+                        <div class="book-price">
+                            <span class="price">$15.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-badge">New</span>
+                        <img src="public/images/books/tomorrow-and-tomorrow.jpg" alt="Tomorrow, and Tomorrow">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Contemporary Fiction</span>
+                        <h3 class="book-title">Tomorrow, and Tomorrow</h3>
+                        <p class="book-author">by Gabrielle Zevin</p>
+                        <div class="book-price">
+                            <span class="price">$18.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Mystery & Thriller Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mystery & Thriller</h2>
+                <p>Edge-of-your-seat suspense and mind-bending puzzles.</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-badge">Bestseller</span>
+                        <img src="public/images/books/the-silent-patient.jpg" alt="The Silent Patient">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Psychological Thriller</span>
+                        <h3 class="book-title">The Silent Patient</h3>
+                        <p class="book-author">by Alex Michaelides</p>
+                        <div class="book-price">
+                            <span class="price">$15.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/gone-girl.jpg" alt="Gone Girl">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Crime Mystery</span>
+                        <h3 class="book-title">Gone Girl</h3>
+                        <p class="book-author">by Gillian Flynn</p>
+                        <div class="book-price">
+                            <span class="price">$14.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/the-girl-with-the-dragon-tattoo.jpg" alt="The Girl with the Dragon Tattoo">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Detective Fiction</span>
+                        <h3 class="book-title">The Girl with the Dragon Tattoo</h3>
+                        <p class="book-author">by Stieg Larsson</p>
+                        <div class="book-price">
+                            <span class="price">$16.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Self-Help & Personal Development Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Self-Help & Personal Development</h2>
+                <p>Books to help you grow, learn, and transform your life.</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-badge">Bestseller</span>
+                        <img src="public/images/books/atomic-habits.jpg" alt="Atomic Habits">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Habits</span>
+                        <h3 class="book-title">Atomic Habits</h3>
+                        <p class="book-author">by James Clear</p>
+                        <div class="book-price">
+                            <span class="price">$14.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/thinking-fast-and-slow.jpg" alt="Thinking, Fast and Slow">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Psychology</span>
+                        <h3 class="book-title">Thinking, Fast and Slow</h3>
+                        <p class="book-author">by Daniel Kahneman</p>
+                        <div class="book-price">
+                            <span class="price">$17.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/the-power-of-now.jpg" alt="The Power of Now">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Mindset</span>
+                        <h3 class="book-title">The Power of Now</h3>
+                        <p class="book-author">by Eckhart Tolle</p>
+                        <div class="book-price">
+                            <span class="price">$15.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Science Fiction & Fantasy Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Science Fiction & Fantasy</h2>
+                <p>Explore new worlds and extraordinary adventures.</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-badge">Classic</span>
+                        <img src="public/images/books/dune.jpg" alt="Dune">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Science Fiction</span>
+                        <h3 class="book-title">Dune</h3>
+                        <p class="book-author">by Frank Herbert</p>
+                        <div class="book-price">
+                            <span class="price">$18.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/the-name-of-the-wind.jpg" alt="The Name of the Wind">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Fantasy</span>
+                        <h3 class="book-title">The Name of the Wind</h3>
+                        <p class="book-author">by Patrick Rothfuss</p>
+                        <div class="book-price">
+                            <span class="price">$16.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="public/images/books/the-way-of-kings.jpg" alt="The Way of Kings">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Epic Fantasy</span>
+                        <h3 class="book-title">The Way of Kings</h3>
+                        <p class="book-author">by Brandon Sanderson</p>
+                        <div class="book-price">
+                            <span class="price">$19.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Never Miss a New Release</h2>
+        <p>Subscribe to get notified about new arrivals and exclusive offers.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Booking<span>Journey</span></span>
+                </div>
+                <p>Your trusted destination for books that inspire, educate, and entertain. Join us on a journey through the world of literature.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="library.html">Fiction</a></li>
+                    <li><a href="library.html">Non-Fiction</a></li>
+                    <li><a href="library.html">Mystery</a></li>
+                    <li><a href="library.html">Self-Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="faq.html">Help Center</a></li>
+                    <li><a href="faq.html">Shipping Info</a></li>
+                    <li><a href="faq.html">Returns</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Booking Journey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-empty">
+            <div class="cart-empty-icon">🛒</div>
+            <h3>Your cart is empty</h3>
+            <p>Looks like you haven't added any books yet.</p>
+            <a href="library.html" class="btn btn-secondary">Browse Library</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Cart modal
+        const cartIcon = document.getElementById('cartIcon');
+        const cartMobile = document.getElementById('cartMobile');
+        const cartModal = document.getElementById('cartModal');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const cartClose = document.getElementById('cartClose');
+
+        cartIcon.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            cartOverlay.classList.add('active');
+        });
+
+        cartMobile.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            cartOverlay.classList.add('active');
+            navMenu.classList.remove('active');
+        });
+
+        cartClose.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        });
+
+        cartOverlay.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
