@@ -231,6 +231,17 @@
         </div>
     </div>
 
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay"></div>
+    <div class="search-modal" id="searchModal">
+        <button class="search-modal-close" id="searchClose" aria-label="Close search">✕</button>
+        <h2>Search Books</h2>
+        <div class="search-modal-input-wrap">
+            <span class="search-modal-icon">🔍</span>
+            <input type="text" class="search-modal-input" id="searchInput" placeholder="Search by title, author, or genre…">
+        </div>
+    </div>
+
     <script>
         // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
@@ -273,6 +284,39 @@
         cartOverlay.addEventListener('click', () => {
             cartModal.classList.remove('active');
             cartOverlay.classList.remove('active');
+        });
+
+        // Search overlay
+        const searchIcon = document.getElementById('searchIcon');
+        const searchMobileBtn = document.getElementById('searchMobileBtn');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchModal = document.getElementById('searchModal');
+        const searchClose = document.getElementById('searchClose');
+        const searchInput = document.getElementById('searchInput');
+
+        function openSearch() {
+            searchModal.classList.add('active');
+            searchOverlay.classList.add('active');
+            searchInput.focus();
+        }
+
+        function closeSearch() {
+            searchModal.classList.remove('active');
+            searchOverlay.classList.remove('active');
+        }
+
+        searchIcon.addEventListener('click', openSearch);
+
+        searchMobileBtn.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            openSearch();
+        });
+
+        searchClose.addEventListener('click', closeSearch);
+        searchOverlay.addEventListener('click', closeSearch);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeSearch();
         });
     </script>
 </body>
