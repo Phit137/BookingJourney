@@ -126,6 +126,14 @@ img {
     gap: 1rem;
 }
 
+.search-icon,
+.cart-icon,
+.cart-mobile,
+.search-mobile-item {
+    border: none;
+    font-family: inherit;
+}
+
 .cart-icon {
     position: relative;
     width: 45px;
