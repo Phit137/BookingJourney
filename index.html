@@ -266,11 +266,13 @@
         const cartClose = document.getElementById('cartClose');
 
         cartIcon.addEventListener('click', () => {
+            closeSearch();
             cartModal.classList.add('active');
             cartOverlay.classList.add('active');
         });
 
         cartMobile.addEventListener('click', () => {
+            closeSearch();
             cartModal.classList.add('active');
             cartOverlay.classList.add('active');
             navMenu.classList.remove('active');
@@ -295,6 +297,8 @@
         const searchInput = document.getElementById('searchInput');
 
         function openSearch() {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
             searchModal.classList.add('active');
             searchOverlay.classList.add('active');
             searchInput.focus();
