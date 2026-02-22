@@ -20,13 +20,15 @@
                 <li><a href="library.html" class="nav-link">Library</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li class="cart-mobile" id="cartMobile">🛒 Cart (0)</li>
+                <li><button class="search-mobile-item" id="searchMobileBtn">🔍 Search</button></li>
+                <li><button class="cart-mobile" id="cartMobile">🛒 Cart (0)</button></li>
             </ul>
             <div class="nav-actions">
-                <div class="cart-icon" id="cartIcon">
+                <button class="search-icon" id="searchIcon">🔍</button>
+                <button class="cart-icon" id="cartIcon">
                     🛒
                     <span class="cart-badge">0</span>
-                </div>
+                </button>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -215,6 +217,17 @@
         </div>
     </div>
 
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay"></div>
+    <div class="search-modal" id="searchModal">
+        <button class="search-modal-close" id="searchClose" aria-label="Close search">✕</button>
+        <h2>Search Books</h2>
+        <div class="search-modal-input-wrap">
+            <span class="search-modal-icon">🔍</span>
+            <input type="text" class="search-modal-input" id="searchInput" placeholder="Search by title, author, or genre…">
+        </div>
+    </div>
+
     <script>
         // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
@@ -239,11 +252,13 @@
         const cartClose = document.getElementById('cartClose');
 
         cartIcon.addEventListener('click', () => {
+            closeSearch();
             cartModal.classList.add('active');
             cartOverlay.classList.add('active');
         });
 
         cartMobile.addEventListener('click', () => {
+            closeSearch();
             cartModal.classList.add('active');
             cartOverlay.classList.add('active');
             navMenu.classList.remove('active');
@@ -257,6 +272,42 @@
         cartOverlay.addEventListener('click', () => {
             cartModal.classList.remove('active');
             cartOverlay.classList.remove('active');
+        });
+
+        // Search overlay
+        const searchIcon = document.getElementById('searchIcon');
+        const searchMobileBtn = document.getElementById('searchMobileBtn');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchModal = document.getElementById('searchModal');
+        const searchClose = document.getElementById('searchClose');
+        const searchInput = document.getElementById('searchInput');
+
+        function openSearch() {
+            cartModal.classList.remove('active');
+            cartOverlay.classList.remove('active');
+            searchModal.classList.add('active');
+            searchOverlay.classList.add('active');
+            searchInput.value = '';
+            searchInput.focus();
+        }
+
+        function closeSearch() {
+            searchModal.classList.remove('active');
+            searchOverlay.classList.remove('active');
+        }
+
+        searchIcon.addEventListener('click', openSearch);
+
+        searchMobileBtn.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            openSearch();
+        });
+
+        searchClose.addEventListener('click', closeSearch);
+        searchOverlay.addEventListener('click', closeSearch);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeSearch();
         });
     </script>
 </body>
